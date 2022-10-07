@@ -109,3 +109,36 @@ button:hover {
 }
 
 /* Media Queries for Mobile */
+
+@media screen and (max-width: 750px) {
+  .cardContainer {
+    max-width: 375px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 10px;
+  }
+
+  .cardInfo {
+    width: 100%;
+    background-color: var(--White);
+    padding: 20px;
+    border-radius: 0 0 10px 10px;
+  }
+
+  img {
+    border-radius: 10px 10px 0 0;
+  }
+
+  .productName {
+    font-size: 35px;
+  }
+
+  .productInformation {
+    letter-spacing: 1px;
+  }
+
+  .prices {
+    gap: 10px;
+  }
+}
