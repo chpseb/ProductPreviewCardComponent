@@ -47,7 +47,7 @@ main {
   background-image: url(./images/image-product-desktop.jpg);
   background-size: cover;
   width: 50%;
-  background-position: center;
+  background-position: center fit;
   border-radius: 10px 0 0 10px;
 }
 
