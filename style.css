@@ -1,0 +1,105 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&display=swap");
+
+:root {
+  --Dark-cyan: hsl(158, 36%, 37%);
+  --Cream: hsl(30, 38%, 92%);
+  --Very-dark-blue: hsl(212, 21%, 14%);
+  --Dark-grayish-blue: hsl(228, 12%, 48%);
+  --White: hsl(0, 0%, 100%);
+}
+
+* {
+  font-family: "Montserrat", sans-serif;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--Cream);
+}
+
+h2 {
+  font-family: "Fraunces", serif;
+  margin: 15px 0;
+}
+
+p {
+  font-size: 14px;
+}
+
+main {
+  width: 700px;
+  height: 100%;
+}
+
+.cardContainer {
+  display: flex;
+  justify-content: center;
+}
+
+.cardImage {
+  background-image: url(./images/image-product-desktop.jpg);
+  background-size: cover;
+  width: 50%;
+  background-position: center;
+  border-radius: 10px 0 0 10px;
+}
+
+.cardInfo {
+  width: 50%;
+  background-color: var(--White);
+  padding: 40px;
+  border-radius: 0 10px 10px 0;
+}
+
+.productCategory {
+  text-transform: uppercase;
+  font-weight: 500;
+  color: var(--Dark-grayish-blue);
+  letter-spacing: 3px;
+}
+
+.productInformation {
+  color: var(--Dark-grayish-blue);
+  margin-bottom: 15px;
+}
+
+.prices {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 15px;
+}
+
+.prices h2 {
+  color: var(--Dark-cyan);
+}
+
+.prices p {
+  text-decoration: line-through;
+  counter-reset: var(--Very-dark-blue);
+}
+
+button {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--White);
+  border: none;
+  border-radius: 10px;
+  padding: 20px;
+  background-color: var(--Dark-cyan);
+  cursor: pointer;
+  gap: 10px;
+}
+
+button:hover {
+  background-color: var(--Very-dark-blue);
+}

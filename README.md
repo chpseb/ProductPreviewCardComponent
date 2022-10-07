@@ -1,1 +1,1 @@
-# ProductPreviewCardComponent
+Product Preview Card Component
